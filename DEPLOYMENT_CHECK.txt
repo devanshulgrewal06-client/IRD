@@ -1,0 +1,8 @@
+IRD Infratech universal custom-domain build
+CSS files found:
+css/style.css
+
+Asset-path normalization applied to:
+
+
+Deploy this ZIP as a new Vercel production deployment.
