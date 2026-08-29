@@ -1,0 +1,35 @@
+{
+  "source_file_count": 35,
+  "web_source_files": 12,
+  "hardcoded_url_findings_before_fix": [
+    [
+      "services.html",
+      "https://www.kpstructures.in/wp-content/uploads/2023/12/IMG-20231003-WA0002.jpg"
+    ],
+    [
+      "services.html",
+      "https://www.kpstructures.in/wp-content/uploads/2023/12/IMG-20231003-WA0002.jpg"
+    ],
+    [
+      "index.html",
+      "https://wa.me/9012133500"
+    ],
+    [
+      "index.html",
+      "https://wa.me/9012133500"
+    ]
+  ],
+  "files_with_hardcoded_origin_replacements": [],
+  "html_files_given_root_base": [
+    "careers.html",
+    "about.html",
+    "services.html",
+    "projects.html",
+    "index.html",
+    "managing-director.html",
+    "pillar-of-strength.html",
+    "clients.html",
+    "project.html",
+    "devanshul-grewal.html"
+  ]
+}
