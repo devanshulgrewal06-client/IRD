@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | IRD Infratech Private Limited</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+:root{--navy:#061a2e;--navy2:#0b2742;--gold:#f4b51b;--cream:#f7f5ef;--ink:#142331}
+*{box-sizing:border-box}.services-page{background:var(--cream);color:var(--ink)}
+.services-hero{min-height:510px;position:relative;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+.services-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.36;filter:saturate(.85)}
+.services-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,17,31,.98) 0%,rgba(3,17,31,.88) 43%,rgba(3,17,31,.18) 100%);z-index:1}
+.hero-inner{width:min(1180px,92%);margin:auto;position:relative;z-index:2;color:#fff;padding:75px 0}.eyebrow{color:var(--gold);font-weight:900;letter-spacing:3px;font-size:12px}.hero-inner h1{font-size:clamp(52px,7vw,88px);line-height:.94;margin:15px 0 22px;letter-spacing:-3px}.hero-inner h1 span{color:var(--gold)}.hero-inner p{max-width:620px;font-size:18px;line-height:1.75;color:rgba(255,255,255,.82);margin:0}.hero-points{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.hero-points span{border:1px solid rgba(244,181,27,.55);background:rgba(0,0,0,.2);padding:10px 14px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.8px}
+.services-wrap{width:min(1180px,92%);margin:auto;padding:72px 0 100px}.intro{text-align:center;max-width:760px;margin:0 auto 48px}.intro h2{font-size:clamp(32px,4vw,48px);margin:10px 0}.intro p{line-height:1.75;opacity:.68;margin:0}.service{display:grid;grid-template-columns:34% 66%;background:#fff;border-radius:24px;overflow:hidden;margin-bottom:26px;box-shadow:0 15px 45px rgba(6,26,46,.08);border:1px solid rgba(6,26,46,.07);min-height:365px}.service:nth-of-type(even){grid-template-columns:34% 66%}.service:nth-of-type(even) .service-copy{order:1}.service:nth-of-type(even) .service-gallery{order:2}.service-copy{order:1}.service-gallery{order:2;display:grid;grid-template-columns:1fr 1fr;min-height:365px}.service-image{position:relative;min-height:365px;overflow:hidden;background:#d8d8d8;border-left:1px solid #eee}.service-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}.service-image:hover img{transform:scale(1.04)}.image-tag{position:absolute;top:18px;left:18px;background:var(--navy);color:#fff;border-radius:8px;padding:9px 12px;font-size:10px;font-weight:900;letter-spacing:1px}.image-tag.complete{background:var(--gold);color:var(--navy)}.service-copy{padding:42px 40px;display:flex;flex-direction:column;justify-content:center}.service-number{width:48px;height:48px;border-radius:13px;background:var(--gold);display:grid;place-items:center;font-size:20px;font-weight:950;margin-bottom:20px}.service-copy h3{font-size:30px;line-height:1.05;margin:0 0 9px;color:var(--navy)}.service-copy .sub{color:#a77916;font-weight:900;font-size:11px;letter-spacing:1.4px;margin-bottom:17px}.service-copy p{line-height:1.75;color:#66717b;margin:0 0 20px}.service-list{display:flex;flex-wrap:wrap;gap:8px}.service-list span{background:#f3f0e7;padding:8px 10px;border-radius:6px;font-size:11px;font-weight:800;color:#4c5660}.closing{background:var(--navy);color:#fff;border-radius:24px;padding:38px 42px;display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:45px}.closing h3{margin:0 0 7px;font-size:25px}.closing p{margin:0;color:rgba(255,255,255,.7);line-height:1.6}.closing a{display:inline-block;background:var(--gold);color:var(--navy);padding:13px 18px;border-radius:8px;font-weight:900;text-decoration:none;white-space:nowrap}.note{font-size:11px;color:#7b8389;margin-top:18px;text-align:center}
+@media(max-width:850px){.service,.service:nth-of-type(even){grid-template-columns:1fr}.service-copy,.service:nth-of-type(even) .service-copy{order:1}.service-gallery,.service:nth-of-type(even) .service-gallery{order:2}.service-image{min-height:280px}.service-gallery{min-height:280px}.closing{flex-direction:column;align-items:flex-start}.hero-inner{padding:65px 0}}
+@media(max-width:560px){.services-wrap{padding-top:55px}.service-copy{padding:30px 25px}.service-copy h3{font-size:25px}.service-gallery{grid-template-columns:1fr}.service-image{min-height:230px}.hero-inner h1{letter-spacing:-2px}.services-hero{min-height:560px}}
+
+
+/* Services page navigation */
+.site-header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(6,26,46,.97);
+  border-bottom:1px solid rgba(244,181,27,.22);
+  box-shadow:0 6px 24px rgba(0,0,0,.12);
+  backdrop-filter:blur(12px);
+}
+.header-inner{
+  width:min(1240px,94%);min-height:78px;margin:auto;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.site-header .brand{display:flex;align-items:center;gap:11px;color:#fff;flex:none}
+.site-header .brand img{width:58px;height:48px;object-fit:contain;object-position:center;border-radius:7px;background:#fff}
+.site-header .brand span{font-size:15px;line-height:1.05;letter-spacing:.4px}
+.site-header .brand strong{display:block}
+.site-header .brand small{display:block;margin-top:5px;color:#aeb9c3;font-size:9px;letter-spacing:1.5px}
+.site-header .nav-links{
+  display:flex;align-items:center;justify-content:flex-end;gap:4px;
+  color:#dbe3e9;font-size:13px;white-space:nowrap;
+}
+.site-header .nav-links a{
+  position:relative;padding:29px 10px 26px;color:#dbe3e9;
+  font-weight:700;transition:color .2s ease,background .2s ease;
+}
+.site-header .nav-links a:after{
+  content:"";position:absolute;left:10px;right:10px;bottom:18px;height:2px;
+  background:#f4b51b;transform:scaleX(0);transform-origin:center;transition:transform .2s ease;
+}
+.site-header .nav-links a:hover{color:#fff}
+.site-header .nav-links a.active{color:#f4b51b}
+.site-header .nav-links a.active:after{transform:scaleX(1)}
+.mobile-menu{
+  display:none;border:1px solid rgba(244,181,27,.45);background:transparent;color:#fff;
+  width:44px;height:40px;border-radius:8px;font-size:22px;cursor:pointer;
+}
+@media(max-width:1050px){
+  .site-header .nav-links{gap:0;font-size:12px}
+  .site-header .nav-links a{padding-left:7px;padding-right:7px}
+  .site-header .nav-links a:after{left:7px;right:7px}
+}
+@media(max-width:850px){
+  .header-inner{min-height:70px}
+  .mobile-menu{display:block}
+  .site-header .nav-links{
+    display:none;position:absolute;top:70px;left:3%;right:3%;width:auto;
+    flex-direction:column;align-items:stretch;gap:0;padding:8px;
+    background:#061a2e;border:1px solid rgba(244,181,27,.2);border-radius:12px;
+    box-shadow:0 18px 45px rgba(0,0,0,.3);
+  }
+  .site-header .nav-links.open{display:flex}
+  .site-header .nav-links a{padding:12px 14px;border-radius:7px}
+  .site-header .nav-links a:hover,.site-header .nav-links a.active{background:rgba(244,181,27,.1)}
+  .site-header .nav-links a:after{display:none}
+}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="IRD Infratech home">
+      <img src="logo.png" alt="IRD Infratech logo">
+      <span><strong>IRD INFRATECH</strong><small>PRIVATE LIMITED</small></span>
+    </a>
+    <button class="mobile-menu" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="site-navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pillar-of-strength.html">Pillar of Strength</a>
+      <a href="clients.html">Clients</a>
+      <a href="services.html" class="active" aria-current="page">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="careers.html">Careers</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="services-page">
+<section class="services-hero">
+  <img src="https://www.kpstructures.in/wp-content/uploads/2023/12/IMG-20231003-WA0002.jpg" alt="Reinforced earth wall construction in India">
+  <div class="hero-inner">
+    <div class="eyebrow">IRD INFRATECH • CORE SERVICES</div>
+    <h1>OUR <span>SERVICES</span></h1>
+    <p>Specialised civil and infrastructure execution focused on strong engineering, safe construction practices and dependable project delivery.</p>
+    <div class="hero-points"><span>QUALITY WORKMANSHIP</span><span>SAFETY FIRST</span><span>TIMELY DELIVERY</span><span>EXPERIENCED TEAM</span></div>
+  </div>
+</section>
+
+<section class="services-wrap">
+  <div class="intro"><div class="eyebrow">WHAT WE DELIVER</div><h2>Built for demanding infrastructure.</h2><p>Our service portfolio covers retaining systems, precast construction, major structures, highway safety and fibre infrastructure.</p></div>
+
+  <article class="service">
+    <div class="service-copy"><div class="service-number">01</div><h3>RE Wall Work</h3><div class="sub">T-SHAPE RE PANEL • RETAINING SYSTEMS</div><p>Reinforced earth wall construction using T-shape precast facing panels and engineered backfill systems for slope stabilisation, land retention and highway structures.</p><div class="service-list"><span>T-Shape Panels</span><span>RE Walls</span><span>Retaining Systems</span><span>Highway Works</span></div></div>
+    <div class="service-gallery">
+      <div class="service-image"><img src="service-images/re-wall-current.jpg" alt="RE wall current work"><span class="image-tag">ONGOING WORK</span></div>
+      <div class="service-image"><img src="service-images/re-wall-complete.jpg" alt="RE wall completed view"><span class="image-tag complete">COMPLETED VIEW</span></div>
+    </div>
+  </article>
+
+  <article class="service">
+    <div class="service-copy"><div class="service-number">02</div><h3>Pre-Cast Boundary Wall Work</h3><div class="sub">FAST INSTALLATION • DURABLE PROTECTION</div><p>Precast boundary wall systems for industrial, commercial and infrastructure sites, combining repeatable quality with efficient installation.</p><div class="service-list"><span>Precast Panels</span><span>RCC Posts</span><span>Site Protection</span><span>Boundary Works</span></div></div>
+    <div class="service-gallery">
+      <div class="service-image"><img src="service-images/boundary-current.jpg" alt="Precast boundary wall current work"><span class="image-tag">ONGOING WORK</span></div>
+      <div class="service-image"><img src="service-images/boundary-complete.jpg" alt="Precast boundary wall completed view"><span class="image-tag complete">COMPLETED VIEW</span></div>
+    </div>
+  </article>
+
+  <article class="service">
+    <div class="service-copy"><div class="service-number">03</div><h3>Structure Work</h3><div class="sub">R.O.B • M.N.B • FLYOVER • BOX-CULVERT</div><p>Execution support for major civil structures including road over bridges, minor bridges, flyovers, box culverts and associated structural works.</p><div class="service-list"><span>R.O.B</span><span>M.N.B</span><span>Flyovers</span><span>Box-Culverts</span></div></div>
+    <div class="service-gallery">
+      <div class="service-image"><img src="service-images/structure-current.jpg" alt="Structure work under construction"><span class="image-tag">ONGOING WORK</span></div>
+      <div class="service-image"><img src="service-images/structure-complete.jpg" alt="Completed structure view"><span class="image-tag complete">COMPLETED VIEW</span></div>
+    </div>
+  </article>
+
+  <article class="service">
+    <div class="service-copy"><div class="service-number">04</div><h3>Pre Cast Crash Barrier</h3><div class="sub">HIGHWAY SAFETY • TRAFFIC PROTECTION</div><p>Precast concrete crash-barrier work for highway medians, edge protection and traffic separation, with attention to alignment and safe installation.</p><div class="service-list"><span>Precast Barriers</span><span>Highways</span><span>Road Safety</span><span>Installation</span></div></div>
+    <div class="service-gallery">
+      <div class="service-image"><img src="service-images/barrier-current.jpg" alt="Crash barrier installation"><span class="image-tag">ONGOING WORK</span></div>
+      <div class="service-image"><img src="service-images/barrier-complete.jpg" alt="Completed highway barrier view"><span class="image-tag complete">COMPLETED VIEW</span></div>
+    </div>
+  </article>
+
+  <article class="service">
+    <div class="service-copy"><div class="service-number">05</div><h3>Fibre Cable Work</h3><div class="sub">OFC • DUCTING • ROAD CORRIDORS</div><p>Laying and installation of optical fibre cable infrastructure along road corridors, including trenching, ducting and reinstatement activities.</p><div class="service-list"><span>OFC Laying</span><span>HDPE Ducts</span><span>Trenching</span><span>Road Crossings</span></div></div>
+    <div class="service-gallery">
+      <div class="service-image"><img src="service-images/fibre-current.jpg" alt="Optical fibre cable and duct installation along an Indian road corridor"><span class="image-tag">ONGOING WORK</span></div>
+      <div class="service-image"><img src="service-images/fibre-complete.jpg" alt="Restored Indian highway corridor after fibre cable work"><span class="image-tag complete">COMPLETED CORRIDOR</span></div>
+    </div>
+  </article>
+
+  <div class="closing"><div><h3>Have an infrastructure requirement?</h3><p>Talk to IRD Infratech about your project scope, execution requirements and site conditions.</p></div><a href="index.html#contact">Contact Us →</a></div>
+  <div class="note">Images on this service page are representative reference images and are not presented as IRD Infratech project photographs.</div>
+</section>
+</main>
+<script src="js/script.js"></script>
+<script>
+(function(){
+  const btn=document.querySelector('.mobile-menu');
+  const nav=document.getElementById('site-navigation');
+  if(!btn || !nav) return;
+  btn.addEventListener('click',function(){
+    const open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open ? 'true' : 'false');
+    btn.textContent=open ? '×' : '☰';
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='☰';
+    });
+  });
+})();
+</script>
+</body>
+</html>
